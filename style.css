@@ -27,46 +27,11 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
-/* Top bar */
-.topbar {
-  border-bottom: 1px solid var(--border-card);
-  background: var(--bg-page);
-}
-
-.topbar-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 18px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand {
-  font-weight: 800;
-  font-size: 15px;
-  color: var(--ink);
-}
-
-.topnav {
-  display: flex;
-  gap: 24px;
-}
-
-.topnav a {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-secondary);
-  transition: color 0.15s ease;
-}
-
-.topnav a:hover { color: var(--ink); }
-
 /* Hero */
 .hero {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 72px 24px 64px;
+  padding: 88px 24px 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,13 +63,6 @@ a { color: inherit; text-decoration: none; }
   color: var(--text-secondary);
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-}
-
 .btn {
   display: inline-flex;
   align-items: center;
@@ -124,14 +82,6 @@ a { color: inherit; text-decoration: none; }
 }
 
 .btn-primary:hover { opacity: 0.9; }
-
-.btn-secondary {
-  background: var(--bg-card);
-  color: var(--ink);
-  border: 1px solid var(--border-card);
-}
-
-.btn-secondary:hover { border-color: var(--ink); }
 
 /* Projects */
 .projects {
@@ -168,18 +118,12 @@ a { color: inherit; text-decoration: none; }
 }
 
 .project-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 22%;
+  object-fit: cover;
+  display: block;
   margin-bottom: 16px;
-}
-
-.project-icon svg {
-  width: 22px;
-  height: 22px;
 }
 
 .project-card h3 {
@@ -219,23 +163,17 @@ a { color: inherit; text-decoration: none; }
   color: var(--text-muted);
 }
 
-.footer-links {
-  display: flex;
-  gap: 20px;
-}
-
-.footer-links a {
+.site-footer a {
   color: var(--text-secondary);
   font-weight: 600;
   transition: color 0.15s ease;
 }
 
-.footer-links a:hover { color: var(--ink); }
+.site-footer a:hover { color: var(--ink); }
 
 /* Mobile */
 @media (max-width: 620px) {
-  .topnav { gap: 16px; }
-  .hero { padding: 48px 20px 48px; }
+  .hero { padding: 56px 20px 48px; }
   .hero h1 { font-size: 32px; }
   .tagline { font-size: 15.5px; }
   .project-grid { grid-template-columns: 1fr; }
